@@ -12,7 +12,12 @@ function App() {
 
   const wantToCook = (food)=>{
     const newFoods = [...foods,food];
-    setFoods(newFoods);
+    const duplicate = foods.find((f)=>f.recipe_id === food.recipe_id);
+    if(duplicate){
+      alert('Already loaded')
+    }else{
+      setFoods(newFoods);
+    }
   }
   return (
     <>

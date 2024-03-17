@@ -1,7 +1,12 @@
 
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 const Want_to_cook = ({foods}) => {
+    const [prepFood,setPerpFood] = useState([]);
+    const preparing = (f)=>{
+        console.log('hello',f);
+    }
     return (
         <div className='lg:w-3/2 text-center'>
            <div>
@@ -18,7 +23,7 @@ const Want_to_cook = ({foods}) => {
                     <td>{food.recipe_name}</td>
                     <td>{food.preparing_time}</td>
                     <td>{food.calories}</td>
-                    <button className='btn bg-[#0BE58A] rounded-full'>Preparing</button>
+                    <button onClick={()=>preparing(foods)} className='btn bg-[#0BE58A] rounded-full'>Preparing</button>
                    </tr>
                     )
                    }
