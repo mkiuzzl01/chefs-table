@@ -2,7 +2,7 @@ import { MdAccessTime } from "react-icons/md";
 import { FaFire } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-const Foot_cart = ({food}) => {
+const Foot_cart = ({food,wantToCook}) => {
   const {calories,ingredients,preparing_time,recipe_image,recipe_name,short_description} = food;
   const items =  ingredients.slice(0,3);
   return (
@@ -42,7 +42,10 @@ const Foot_cart = ({food}) => {
             </div>
           </div>
           <div className="card-actions">
-            <button className="btn bg-[#0BE58A] rounded-full">Want to Cook</button>
+            <button
+             onClick={()=>wantToCook(food)}
+             className="btn bg-[#0BE58A] rounded-full"
+             >Want to Cook</button>
           </div>
         </div>
       </div>
@@ -51,7 +54,8 @@ const Foot_cart = ({food}) => {
 };
 
 Foot_cart.propTypes = {
-  food:PropTypes.object.isRequired
+  food:PropTypes.object.isRequired,
+  wantToCook:PropTypes.func.isRequired
 };
 
 export default Foot_cart;

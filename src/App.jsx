@@ -5,8 +5,15 @@ import Foods_cart from "./component/Foods_cart/Foods_cart";
 import Want_to_cook from "./component/Want_to_cook/Want_to_cook";
 import Footer from "./component/Footer/Footer";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [foods,setFoods] = useState([]);
+
+  const wantToCook = (food)=>{
+    const newFoods = [...foods,food];
+    setFoods(newFoods);
+  }
   return (
     <>
       <header className="max-w-[1320px] m-auto px-3">
@@ -17,8 +24,10 @@ function App() {
       </header>
       <Recipes></Recipes>
       <main className="max-w-[1320px] m-auto flex flex-col lg:flex-row lg:justify-between px-3">
-        <Foods_cart></Foods_cart>
-        <Want_to_cook></Want_to_cook>
+        <Foods_cart
+        wantToCook={wantToCook}
+        ></Foods_cart>
+        <Want_to_cook foods={foods}></Want_to_cook>
       </main>
       <footer className="px-3">
         <Footer></Footer>
