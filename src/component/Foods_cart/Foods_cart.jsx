@@ -4,6 +4,7 @@ import Food_cart from '../Foods_cart/Food_cart/Food_cart';
 
 const Foods_cart = ({wantToCook}) => {
     const [foods, setFoods] = useState([]);
+    
     useEffect(()=>{
         fetch('Recipes.json')
         .then(Response=> Response.json())

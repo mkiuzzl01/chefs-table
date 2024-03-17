@@ -6,6 +6,8 @@ import Want_to_cook from "./component/Want_to_cook/Want_to_cook";
 import Footer from "./component/Footer/Footer";
 import "./App.css";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [foods,setFoods] = useState([]);
@@ -14,7 +16,7 @@ function App() {
     const newFoods = [...foods,food];
     const duplicate = foods.find((f)=>f.recipe_id === food.recipe_id);
     if(duplicate){
-      alert('Already loaded')
+      toast.warn('Already Exist')
     }else{
       setFoods(newFoods);
     }
@@ -37,6 +39,7 @@ function App() {
       <footer className="px-3">
         <Footer></Footer>
       </footer>
+      <ToastContainer />
     </>
   );
 }

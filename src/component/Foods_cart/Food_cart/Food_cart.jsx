@@ -35,10 +35,10 @@ const Foot_cart = ({food,wantToCook}) => {
           </div>
           <div className="flex justify-between space-x-4">
             <div className="flex justify-center items-center space-x-2">
-              <span><MdAccessTime /></span><span>{preparing_time}</span>
+              <span><MdAccessTime /></span><span>{preparing_time} minutes</span>
             </div>
             <div className="flex justify-center items-center space-x-2">
-              <span><FaFire /></span><span>{calories}</span>
+              <span><FaFire /></span><span>{calories} Calories</span>
             </div>
           </div>
           <div className="card-actions">
