@@ -22,7 +22,8 @@ const Want_to_cook = ({ foods }) => {
         <h1 className="text-2xl font-semibold border-b-2 p-3 lg:mx-8">
           Want to cook: {foods.length}
         </h1>
-        <table className="table">
+        <div className="overflow-auto">
+        <table className="table lg:table">
           <thead>
            <tr>
            <th></th>
@@ -38,15 +39,18 @@ const Want_to_cook = ({ foods }) => {
               <td>{food.recipe_name}</td>
               <td>{food.preparing_time} Minutes</td>
               <td>{food.calories} Calories</td>
-              <td><button
+              <td>
+              <button
                 onClick={() => preparing(food)}
                 className="btn bg-[#0BE58A] rounded-full">
                 Preparing
-              </button></td>
+              </button>
+              </td>
             </tr>
           ))}
           </tbody>
         </table>
+        </div>
       </div>
       <div>
         <h1 className="text-2xl font-semibold border-b-2 p-3 lg:mx-8">
@@ -73,11 +77,11 @@ const Want_to_cook = ({ foods }) => {
           <tr>
             <td></td>
             <td></td>
-            <td className="text-lg font-semibold">
-              Total Minutes: {prepFood.reduce((p, c) => p + c.preparing_time, 0)}
+            <td className="font-semibold">
+              Total Minutes = {prepFood.reduce((p, c) => p + c.preparing_time, 0)}
             </td>
-            <td className="text-lg font-semibold">
-              Total Calories: {prepFood.reduce((p, c) => p + c.calories, 0)}
+            <td className="font-semibold">
+              Total Calories = {prepFood.reduce((p, c) => p + c.calories, 0)}
             </td>
           </tr>
           </tbody>
