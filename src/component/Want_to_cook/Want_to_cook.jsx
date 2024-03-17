@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Want_to_cook = ({ foods }) => {
   const [prepFood, setPerpFood] = useState([]);
@@ -12,6 +14,7 @@ const Want_to_cook = ({ foods }) => {
     if (index > -1) {
       foods.splice(index, 1);
     }
+    toast.success('Currently Cooking Added')
   };
   return (
     <div className="lg:w-3/2 text-center border-2 rounded-2xl p-4">
@@ -31,7 +34,7 @@ const Want_to_cook = ({ foods }) => {
           <tbody>
           {foods.map((food,idx) => (
             <tr key={food.recipe_id}>
-            <td>{idx}</td>
+            <td>{idx + 1}</td>
               <td>{food.recipe_name}</td>
               <td>{food.preparing_time} Minutes</td>
               <td>{food.calories} Calories</td>
@@ -52,20 +55,23 @@ const Want_to_cook = ({ foods }) => {
         <table className="table">
           <thead>
             <tr>
+            <th></th>
             <th>Name</th>
             <th>Time</th>
             <th>Calories</th>
             </tr>
           </thead>
         <tbody>
-          {prepFood.map((food) => (
+          {prepFood.map((food,idx) => (
             <tr key={food.recipe_id}>
+              <td>{idx + 1}</td>
               <td>{food.recipe_name}</td>
               <td>{food.preparing_time} minutes</td>
               <td>{food.calories} calories</td>
             </tr>
           ))}
           <tr>
+            <td></td>
             <td></td>
             <td className="text-lg font-semibold">
               Total Minutes: {prepFood.reduce((p, c) => p + c.preparing_time, 0)}
@@ -77,6 +83,7 @@ const Want_to_cook = ({ foods }) => {
           </tbody>
         </table>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -4,12 +4,13 @@ const Footer = () => {
     <div className="mt-5">
       <footer className="footer footer-center p-10 bg-slate-800 text-primary-content">
         <aside>
-          <p className="font-bold">
+          <p className="text-2xl font-bold">
             CHEFS-TABLE
           </p>
-          <p>Copyright © 2024 - All right reserved</p>
+          <p> We have Expert Chef, There are might Every Italian or Chaines food cooked, <br /> Your Choice we are first Priorities.Please stay with us Every time </p>
         </aside>
         <nav>
+          <p>Copyright © 2024 - All right reserved</p>
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg

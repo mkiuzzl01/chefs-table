@@ -1,4 +1,5 @@
 import { FaUserCircle } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
 function Navigation_bar() {
   return (
     <div className="navbar bg-base-100">

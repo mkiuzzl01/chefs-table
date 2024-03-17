@@ -6,8 +6,7 @@ function Banner() {
         <div className="">
           <h1 className="mb-5 text-5xl font-bold">Discover an exceptional cooking <br /> class tailored for you!</h1>
           <p className="mb-5">
-          Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ <br /> coding problems to become an exceptionally well world-class Programmer.
-          </p>
+            We have Expert Chef, There are might Every Italian or Chaines food cooked, <br /> Your Choice we are first Priorities.Please stay with us Every time</p>
           <div className="space-x-3">
           <button className="btn bg-[#0BE58A] border-none rounded-full">Explore Now</button>
           <button className="btn btn-outline text-white rounded-full">Our Feedback</button> 
