@@ -1,0 +1,58 @@
+[
+      {
+        "recipe_id": 1,
+        "recipe_name": "Spaghetti Bolognese",
+        "short_description": "Classic Italian pasta dish with a rich meat sauce.",
+        "ingredients": ["400g spaghetti", "500g ground beef", "1 onion", "2 cloves garlic", "400g canned tomatoes", "2 tbsp tomato paste", "1/2 cup red wine", "1 tsp dried oregano", "1/2 tsp dried basil", "Salt and pepper to taste", "Grated Parmesan cheese for serving"],
+        "preparing_time": "45 minutes",
+        "calories": "450 calories",
+        "recipe_image": "https://i.ibb.co/VBc1ffD/homescreenify-s-A3wym-Yqya-I-unsplash.jpg"
+      },
+      {
+        "recipe_id": 2,
+        "recipe_name": "Chicken Stir-Fry",
+        "short_description": "Quick and flavorful stir-fry with tender chicken and fresh vegetables.",
+        "ingredients": ["500g chicken breast", "1 red bell pepper", "1 green bell pepper", "1 onion", "2 cloves garlic", "200g broccoli florets", "120ml soy sauce", "2 tbsp oyster sauce", "1 tbsp sesame oil", "1 tbsp cornstarch", "2 tbsp vegetable oil", "Salt and pepper to taste"],
+        "preparing_time": "25 minutes",
+        "calories": "320 calories",
+        "recipe_image": "https://i.ibb.co/Pg82wmr/toa-heftiba-BKf-Tpl-N3-J5o-unsplash.jpg"
+      },
+      {
+        "recipe_id": 3,
+        "recipe_name": "Vegetable Curry",
+        "short_description": "A flavorful vegetarian curry loaded with colorful vegetables and aromatic spices.",
+        "ingredients": ["1 cauliflower", "2 carrots", "1 large potato", "1 onion", "2 cloves garlic", "1 can (400g) chickpeas", "400ml coconut milk", "2 tbsp curry powder", "1 tsp ground turmeric", "1 tsp ground cumin", "1 tsp ground coriander", "1 tbsp vegetable oil", "Salt and pepper to taste"],
+        "preparing_time": "40 minutes",
+        "calories": "280 calories",
+        "recipe_image": "https://i.ibb.co/jRyQgSg/farhad-ibrahimzade-Tv-MWBS6-TIsg-unsplash.jpg"
+      },
+      {
+        "recipe_id": 4,
+        "recipe_name": "Caprese Salad",
+        "short_description": "A simple and refreshing salad showcasing the flavors of ripe tomatoes, fresh mozzarella, and fragrant basil.",
+        "ingredients": ["4 large tomatoes", "200g fresh mozzarella cheese", "1 bunch fresh basil", "2 tbsp extra virgin olive oil", "1 tbsp balsamic vinegar", "Salt and pepper to taste"],
+        "preparing_time": "15 minutes",
+        "calories": "200 calories",
+        "recipe_image": "https://i.ibb.co/YQ29vLS/bryony-elena-d-JGe-ISqe-Eiw-unsplash.jpg"
+      },
+      {
+        "recipe_id": 5,
+        "recipe_name": "Grilled Salmon",
+        "short_description": "Juicy grilled salmon fillets seasoned with herbs and lemon.",
+        "ingredients": ["4 salmon fillets", "2 tbsp olive oil", "2 cloves garlic", "1 lemon", "1 tsp dried dill", "Salt and pepper to taste"],
+        "preparing_time": "20 minutes",
+        "calories": "320 calories",
+        "recipe_image": "https://i.ibb.co/VSkmhyk/karyna-panchenko-e7k2q18-Aw5c-unsplash.jpg"
+      },
+      {
+        "recipe_id": 6,
+        "recipe_name": "Chocolate Chip Cookies",
+        "short_description": "Classic homemade cookies loaded with chocolate chips, perfect for dessert or snack.",
+        "ingredients": ["200g all-purpose flour", "1/2 tsp baking soda", "1/4 tsp salt", "115g unsalted butter", "100g granulated sugar", "100g brown sugar", "1 egg", "1 tsp vanilla extract", "200g chocolate chips"],
+        "preparing_time": "30 minutes",
+        "calories": "150 calories",
+        "recipe_image": "https://i.ibb.co/mcGyYYc/dor-farber-Tnk-KAJ7-LZQ-unsplash.jpg"
+      }
+    ]
+
+  
